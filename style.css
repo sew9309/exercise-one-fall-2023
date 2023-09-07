@@ -1,0 +1,83 @@
+html,
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.section-wrapper {
+    background-color: #cff1ca;
+    padding: 25px;
+}
+
+.interior {
+    background-color: #9ef490;
+    border: 10px solid green;
+    margin: 40px auto; /*margin will fill remainder of space*/
+    padding: 40px;
+}
+
+#anchor-id {
+    color: no; /*never use id for applying style, just use a class once */
+}
+
+.flex-interior {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.flex-parent {
+    background-color: lightcoral;
+    border: 10px solid brown;
+    display: flex;
+    flex-basis: 40%; /* this gave me weird outcome, prof said depends on browser size*/
+    flex-shrink: 0;
+    gap: 25px;
+    padding: 25px;
+    width: 100%;
+}
+
+.flex-parent h1{
+    color: brown;
+}
+
+.flex-parent:first-of-type { /*this is a pseudo selector*/
+    flex-basis: 100%;
+    padding: 40px;
+}
+
+.flex-parent-stacked {
+    flex-direction: column; /* changing default flex direction which is row */
+}
+
+.flex-child {
+    background-color: beige;
+    border: 2px solid orange;
+    flex-basis: 33%;
+    min-height: 100px;
+}
+
+.flex-child-big{
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
