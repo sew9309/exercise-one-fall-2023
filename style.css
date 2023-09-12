@@ -37,23 +37,24 @@ header {
 }
 
 header nav {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: flex-end;
     margin: 0 auto;
-    max-width: 90px;
+    max-width: 900px;
 
 }
  header nav a{
     color: black;
+    display: block;
     font-size: 20px;
     font-weight: bold; /*variable web fonts, but you can fake a bold */
     text-decoration: none;
     margin: 0 10px;
  }
 
- header nav a: :last-of-type { /*pseudo selector */
+ header nav a:last-of-type { /*pseudo selector */
     margin-right: 0;
  }
 
@@ -121,19 +122,20 @@ header nav {
     max-width: 800px;
 }
 
-positioning-wrapper {
+.positioning-wrapper {
     background-color: #cad7f1;
     position: relative;
 }
 
-interior-positioning {
+.interior--positioning {
     background-color: #85c4ff;
     border-color: #0e3f9e;
+    min-height: 600px;
     position: relative;
 }
 
 .circle {
-    background-color: #85c4ff;
+    background-color: white;
     border: 5px solid #0e3f9e;
     border-radius: 50%;
     height: 80px;
@@ -142,9 +144,8 @@ interior-positioning {
 }
 
 .square {
-    background-color: #85c4ff;
+    background-color: white;
     border: 5px solid #0e3f9e;
-    border-radius: 50%;
     height: 80px;
     position: absolute;
     width: 80px;
