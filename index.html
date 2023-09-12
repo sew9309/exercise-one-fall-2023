@@ -53,11 +53,50 @@
                 </div>
             </section>            
             <!-- Positioning Elements Section-->
-            <section></section>
+            <section class="positioning-wrapper">
+                <div class="interior--positioning">
+                    <h1>Positioning Elements</h1>
+                    <div class="circle" style="right: 20px; top:300px;"></div>
+                    <div class="circle" style="left: 50px; bottom: 100px;"></div>
+                    <div class="circle" style="right: 200px; bottom: 30px;"></div>
+                    <div class="square" style="left: 300px; top: 300px;"></div>
+                    <div class="square" style="right: 30px; bottom: 20px;"></div>
+                </div>
+            </section>
             <!-- Heading Usage Section-->
-            <section></section>
+            <section>
+                <div class="interior">
+                    <h1>Highest level header (h1)</h1>
+                    <h2>Subsection of the header one (h2)</h2>
+                    <p>add paragraph text anywhere you want, as long as it's below the h1</p>
+                    <h3>Header three is a subsection of header two (h3)</h3>
+                    <h4>This is a subsection of the third header (h4)</h4>
+                </div>
+            </section>
             <!-- Simple Javascript Section-->
-            <section></section>
+            <section>
+                <div class="interior">
+                    <h1>Simple JavaScript</h1>
+                    <script>
+                        let count = 0;
+
+                        function increaseCount () {
+                            count = count + 1;
+                            const countIndicator = document.querySelector(".count-indicator");
+                            return(countIndicator.innerHTML = count);
+                        }
+
+                        function decreaseCount () {
+                            count = count - 1;
+                            const countIndicator = document.querySelector(".count-indicator");
+                            return(countIndicator.innerHTML = count);
+                        }
+                    </script>
+                    <p>Count: <span class="count-indicator">0</span></p>
+                    <button onClick = "increaseCount()">Click to increase!</button>
+                    <button onClick = "decreaseCount()">Click to decrease!</button>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </body>
